@@ -654,7 +654,7 @@ article{
     top: 20px;
     left: 20px;
 }
-article time:first-child{
+article .time:first-child{
     background-color: #363636;
     padding: 5px;
     display: block;
@@ -662,7 +662,7 @@ article time:first-child{
     border-radius: 5px 5px 0 0;
     transition: all 0.5s ease-in-out;
 }
-article time:last-child{
+article .time:last-child{
     background-color: #252525;
     padding: 5px;
     display: block;
@@ -701,12 +701,12 @@ article time:last-child{
     color: #fff;
 }
 
-.posts:hover article time:first-child{ 
+.posts:hover article .time:first-child{ 
     position: relative;
     color: #fff;
     background-color: #c7b299;
 }
-.posts:hover article time:last-child{ 
+.posts:hover article .time:last-child{ 
     position: relative;
     color: #fff;
     background-color: #a48d72;
