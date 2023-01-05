@@ -247,7 +247,7 @@ a{
 .services__box img {
     width: 45px;
     height: auto;
-    stroke: #fff;
+    stroke: rgb(253, 253, 253);
     stroke-width: 20px;
     filter: grayscale(100%);
     padding-bottom: 30px;
