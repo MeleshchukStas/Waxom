@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waxom</title>
+    <link rel="stylesheet" href="slaider.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logos.png" >
 </head>
@@ -15,40 +16,75 @@
     <a href="#footer">Down</a>
 </div>
 <header class="header" id="header">
-    <div class="container">
-        <nav class="header__top">
-            <div class="logotip">
-                <img src="img/logos.png" alt="" class="logo__img">
-                <p class="logotext">Waxom</p>
-            </div>
-            <div class="meni">
-                <input type="checkbox" id="checkbox_toggle">
-                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
-                <ul class="meni__list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">About Us</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#shortcodex">Shortcodex</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-                <div class="search">
-                    <div class="cart"></div>
-                    <div class="lupa"></div>
-                </div>
-            </div>
-        </nav>
-        <div class="header__midle">
-            <h2>Unique and Modern Design</h2>
-            <h1>Portfolio PSD Template</h1>
-            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-            <div class="header__midle__bottom">
-                <a href="#services">GET STARTED</a>
-            </div>
-        </div>
-    </div>
+    <div class="all">
+		<input checked type="radio" name="respond" id="desktop">
+			<article id="slider">
+					<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+					<div class="container" style="position: absolute; right: 0%; left: 0%; text-align: center;">
+						<nav class="header__top" >
+							<div class="logotip">
+								<img src="img/logos.png" alt="" class="logo__img">
+								<p class="logotext">Waxom</p>
+							</div>
+							<div class="meni">
+								<input type="checkbox" id="checkbox_toggle">
+								<label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+								<ul class="meni__list">
+									<li><a href="#">Home</a></li>
+									<li><a href="#services">About Us</a></li>
+									<li><a href="#portfolio">Portfolio</a></li>
+									<li><a href="#features">Features</a></li>
+									<li><a href="#blog">Blog</a></li>
+									<li><a href="#pricing">Pricing</a></li>
+									<li><a href="#shortcodex">Shortcodex</a></li>
+									<li><a href="#footer">Contact</a></li>
+								</ul>
+								<div class="search">
+									<div class="cart"></div>
+									<div class="lupa"></div>
+								</div>
+							</div>
+						</nav>
+						<div class="header__midle">
+							<h2>Unique and Modern Design</h2>
+							<h1>Portfolio PSD Template</h1>
+							<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
+							<div class="header__midle__bottom">
+								<a href="#services">GET STARTED</a>
+							</div>
+						</div>
+					</div>
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article><img src="img/photo.jpg"></article>
+							<article><img src="img/photo.jpg"></article>
+							<article><img src="img/photo.jpg"></article>
+							<article><img src="img/photo.jpg"></article>
+							<article><img src="img/photo.jpg"></article>
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+			</article>
+	</div>
 </header>
 <div class="container__content" id="services">
     <div class="services">
@@ -162,7 +198,6 @@
     <div class="video_prerol" id="features">
         <input id="video" type="checkbox">
         <label class="prerol_video" for="video">Lorem, ipsum dolor.</label>
-        
             <video width="400" height="300" controls="controls" autoplay>
                 <source src="video.mp4">
             </video>
@@ -189,28 +224,28 @@
         <div class="counter">
             <div class="counter__box">
                 <img src="img/icon9.png" alt="">
-                <h2>3587</h2>
-                <p>Satisfied Clients</p>
+                <p class="num">3587</p>
+                <p class="counter_box_txt">Satisfied Clients</p>
             </div>
             <div class="counter__box">
                 <img src="img/icon8.png" alt="">
-                <h2>207</h2>
-                <p>Cups of coffee</p>
+                <p class="num">207</p>
+                <p class="counter_box_txt">Cups of coffee</p>
             </div>
             <div class="counter__box">
                 <img src="img/icon7.png" alt="">
-                <h2>2500</h2>
-                <p>Blog posts</p>
+                <p class="num">2500</p>
+                <p class="counter_box_txt">Blog posts</p>
             </div>
             <div class="counter__box">
                 <img src="img/icon6.png" alt="">
-                <h2>873</h2>
-                <p>Likes</p>
+                <p class="num">873</p>
+                <p class="counter_box_txt">Likes</p>
             </div>
             <div class="counter__box">
                 <img src="img/icon5.png" alt="">
-                <h2>900</h2>
-                <p>We launched</p>
+                <p class="num">900</p>
+                <p class="counter_box_txt">We launched</p>
             </div>
         </div>
     </div>
@@ -290,3 +325,5 @@
 </div>
 </body>
 </html>
+
+

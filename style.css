@@ -1,12 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
+/* html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+} */
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+}
+h3, h4, h5, h5{
+    font-family: 'Raleway', sans-serif;
+}
+p, li, a{
+    font-family: 'Montserrat', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
 }
 *::selection{
     background-color: #4e3427;
 }
+.prerol{
+    position: relative;
+    height: 100%;
+    animation-name: height;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+    
+}
+.prerol::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:0;
+    background: rgb(18, 39, 11, 0.9);
+    animation-name: prerol;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+}
+@keyframes prerol{
+    0%{
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 99999;
+
+    }
+    100%{
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 0;
+    }
+}
+@keyframes height{
+    0%{
+        height: 100%;
+        overflow: hidden;
+
+    }
+    100%{
+        height: none;
+
+    }
+}
+
+
+
 .button-right{
     position: fixed;
     bottom: 50px;
@@ -18,7 +98,6 @@
     flex-wrap: nowrap;
     align-items: center;
     border-radius: 30px;
-    
 }
 .button-right a{
     color: #923405;
@@ -48,29 +127,22 @@ body::-webkit-scrollbar-thumb{
     background: #382b22;
     border-radius: 8px;
 }
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-.header{
+#slider{
     color: #fff;
     text-align: center;
-    background: url(img/photo.jpg);
     background-repeat: no-repeat;
     background-position: 43% 32%;
     width: 100%;
     position: relative;
-    padding-top: 40px;
+    
 }
-.header::before{
+#slider::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color:rgb(67, 58, 48, 0.5);
 }
 .container,
@@ -84,7 +156,6 @@ a{
 .container__content{
     padding: 4% 0;
 }
-
 .header__top{
     display: flex;
     flex-direction: row;
@@ -92,6 +163,7 @@ a{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-top: 50px;
 }
 .logotip{
     font-size: 35px;
@@ -100,6 +172,7 @@ a{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    color: rgb(255, 255, 255);
 }
 .logotip img{
     width: 100%;
@@ -119,7 +192,7 @@ a{
 .meni__list li a{
     margin: 0 15px;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     transition: 0.2s ease-in-out;
 }
 .meni__list li a:hover{
@@ -153,11 +226,9 @@ a{
 }
 .hamburger-line::before{
     top: 7px;
-    
 }
 .hamburger-line::after{
     top: -7px;
-    
 }
 
 .header__midle{
@@ -233,7 +304,6 @@ a{
     height: auto;
     text-align: center;
     color: #555555;
-    cursor: pointer;
     margin: 10px 7px;
 }
 .services__box::after{
@@ -281,6 +351,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 0;
+    text-align: left;
 }
 .boxes h2{
     color: #fff;
@@ -316,6 +387,8 @@ a{
 }
 .latest__project__text p{
     color: #8c8c8c;
+    margin-top: 20px;
+    font-size: 15px;
 }
 .latest__project__menu{
     margin-top: 50px;
@@ -378,7 +451,6 @@ a{
     position: absolute;
     right: 35%;
     top:30%;
-    cursor: pointer;
 }
 .qwer::before{
     content: "";
@@ -389,7 +461,6 @@ a{
     position: absolute;
     left: 35%;
     top:30%;
-    cursor: pointer;
 }
 .project__img__box:hover{
     background: #382b22;
@@ -502,11 +573,10 @@ video{
     transition: all 1s ease-in-out;
 }
 .prerol_video:hover::after{
-    cursor: pointer;
     transform: rotate(0.5turn);
 }
 #video:checked + label {
-      display:none;
+    display:none;
 }
 #video{
     position: absolute;
@@ -547,7 +617,6 @@ video{
     margin-top: 60px;
     margin-left: 50px;
     font-size: 16px;
-    
 }
 .devices__list li{
     background-image: url(./img/arrow.png);
@@ -576,12 +645,12 @@ li::marker{
     height: 2px;
     background-color: #f1eee9;
 }
-.counter__box h2{
+.num{
     margin-top: 20px;
     color: #fff;
     font-size: 42px;
 }
-.counter__box p{
+.counter_box_txt{
     margin-top: 10px;
     color: #7f6e5f;
     font-size: 14px;
@@ -595,7 +664,7 @@ li::marker{
 .posts__text p{
     margin-top: 20px;
     color: #939393;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
 }
 .post__box{
@@ -830,6 +899,7 @@ li::marker{
         flex-direction: column;
         flex-wrap: wrap;
         padding: 40px 0;
+        
     }
     .boxes__txt{
         margin-bottom: 40px;
