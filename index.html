@@ -25,30 +25,32 @@
 					<input type="radio" name="slider" id="switch4">
 					<input type="radio" name="slider" id="switch5">
 					<div class="container" style="position: absolute; right: 0%; left: 0%; text-align: center;">
-						<nav class="header__top" >
-							<div class="logotip">
-								<img src="img/logos.png" alt="" class="logo__img">
-								<p class="logotext">Waxom</p>
-							</div>
-							<div class="meni">
-								<input type="checkbox" id="checkbox_toggle">
-								<label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
-								<ul class="meni__list">
-									<li><a href="#">Home</a></li>
-									<li><a href="#services">About Us</a></li>
-									<li><a href="#portfolio">Portfolio</a></li>
-									<li><a href="#features">Features</a></li>
-									<li><a href="#blog">Blog</a></li>
-									<li><a href="#pricing">Pricing</a></li>
-									<li><a href="#shortcodex">Shortcodex</a></li>
-									<li><a href="#footer">Contact</a></li>
-								</ul>
-								<div class="search">
-									<div class="cart"></div>
-									<div class="lupa"></div>
-								</div>
-							</div>
-						</nav>
+						<div class="header__top" >
+							<div class="logo_meni">
+                                <div class="logotip">
+                                    <img src="img/logos.png" alt="" class="logo__img">
+                                    <h4 class="logotext">Waxom</h4>
+                                </div>
+                                <div class="meni">
+                                    <input type="checkbox" id="checkbox_toggle">
+                                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                                    <ul class="meni__list">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#services">About Us</a></li>
+                                        <li><a href="#portfolio">Portfolio</a></li>
+                                        <li><a href="#features">Features</a></li>
+                                        <li><a href="#blog">Blog</a></li>
+                                        <li><a href="#pricing">Pricing</a></li>
+                                        <li><a href="#shortcodex">Shortcodex</a></li>
+                                        <li><a href="#footer">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <img class="cart" src="img/icon-cart.png" alt="">
+                                <img class="lupa" src="img/icon-search.png" alt="">
+                            </div>
+						</div>
 						<div class="header__midle">
 							<h2>Unique and Modern Design</h2>
 							<h1>Portfolio PSD Template</h1>
@@ -143,7 +145,10 @@
         <div class="latest__project__img__box">
             <div class="project__img__box">
                 <img src="img/project_img-1.jpg" alt="">
-                <div class="qwer"></div>
+                <div class="project_link_img">
+                    <img src="img/lupa.png" alt="">
+                    <img src="/img/link.png" alt="">
+                </div>
                 <div class="project__txt">
                     <h3>Claritas Etiam Processus</h3>
                     <p>Photography, Nature</p>
@@ -151,7 +156,10 @@
             </div>
             <div class="project__img__box">
                 <img src="img/project_img-2.jpg" alt="">
-                <div class="qwer"></div>
+                <div class="project_link_img">
+                    <img src="img/lupa.png" alt="">
+                    <img src="/img/link.png" alt="">
+                </div>
                 <div class="project__txt">
                     <h3>Quam Nutamus Farum</h3>
                     <p>Graphic Design, Mock-Up</p>  
@@ -159,7 +167,10 @@
             </div>
             <div class="project__img__box">
                 <img src="img/project_img-3.jpg" alt="">
-                <div class="qwer"></div>
+                <div class="project_link_img">
+                    <img src="img/lupa.png" alt="">
+                    <img src="/img/link.png" alt="">
+                </div>
                 <div class="project__txt">
                     <h3>Usus Legentis Videntur</h3>
                     <p>Photography, Holiday</p>
@@ -167,7 +178,10 @@
             </div>
             <div class="project__img__box">
                 <img src="img/project_img-4.jpg" alt="">
-                <div class="qwer"></div>
+                <div class="project_link_img">
+                    <img src="img/lupa.png" alt="">
+                    <img src="/img/link.png" alt="">
+                </div>
                 <div class="project__txt">
                     <h3>Claritas Etiam Processus</h3>
                     <p>Photography, Nature</p>
@@ -175,7 +189,10 @@
             </div>
             <div class="project__img__box">
                 <img src="img/project_img-5.jpg" alt="">
-                <div class="qwer"></div>
+                <div class="project_link_img">
+                    <img src="img/lupa.png" alt="">
+                    <img src="/img/link.png" alt="">
+                </div>
                 <div class="project__txt">
                     <h3>Quam Nutamus Farum</h3>
                     <p>Graphic Design, Mock-Up</p>  
@@ -183,7 +200,10 @@
             </div>
             <div class="project__img__box">
                 <img src="img/project_img-6.jpg" alt="">
-                <div class="qwer"></div>
+                <div class="project_link_img">
+                    <img src="img/lupa.png" alt="">
+                    <img src="/img/link.png" alt="">
+                </div>
                 <div class="project__txt">
                     <h3>Usus Legentis Videntur</h3>
                     <p>Photography, Holiday</p>
@@ -197,7 +217,11 @@
 </div>
     <div class="video_prerol" id="features">
         <input id="video" type="checkbox">
-        <label class="prerol_video" for="video">Lorem, ipsum dolor.</label>
+        <label class="prerol_video" for="video">
+            <h2 class="video_txt">Waxom Video Presentation</h2>
+            <p class="video_punkt">investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+            <p class="video_time">03:26</p>
+        </label>
             <video width="400" height="300" controls="controls" autoplay>
                 <source src="video.mp4">
             </video>
