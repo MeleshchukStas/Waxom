@@ -34,8 +34,8 @@ a{
     position: relative;
     height: 100%;
     animation-name: height;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
     animation-iteration-count: 1;
     animation-fill-mode:both;
     
@@ -49,8 +49,8 @@ a{
     height:0;
     background: rgb(18, 39, 11, 0.9);
     animation-name: prerol;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
     animation-iteration-count: 1;
     animation-fill-mode:both;
 }
@@ -302,7 +302,7 @@ body::-webkit-scrollbar-thumb{
     padding: 20px 40px;
     background: #998675;
     border-radius: 10px;
-    border-bottom: 3px solid#382b22 ;
+    border-bottom: 3px solid #382b22 ;
     transition: all 0.2s ease-in-out;
 }
 .header__midle__bottom a:hover {
