@@ -611,9 +611,13 @@ video{
     height: 100%;
     background: url(./img/video_bg.jpg);       
 }
-.prerol_video, .fghj{
+.fghj{
+    position: absolute;
+    right: 1%;
+    left: 1%;
     padding-top: 22%;
     color: #ededee; 
+    z-index: 9999;
 }
 .video_txt{
     font-size: 30px;
