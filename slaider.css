@@ -20,7 +20,7 @@ html, body{
 	margin: 0 auto;
 }
 
-#slides article{
+#slides .slider_img{
 	width: 20%;
 	float: left;
 }
@@ -35,7 +35,7 @@ html, body{
 	overflow: hidden;
 }
 
-article img{
+.slider_img img{
 	width: 100%;
 	height: 100vh;
 }
