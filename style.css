@@ -5,13 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url(./img/curs.png)20 20, default;
 }
-/* html, body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-} */
+a, a:hover{
+    cursor: url(img/curs.png)20 20, default;
+}
 h1, h2{
     font-family: 'Raleway', sans-serif;
 }
@@ -30,7 +28,7 @@ a{
 *::selection{
     background-color: #4e3427;
 }
-.prerol{
+/* .prerol{
     position: relative;
     height: 100%;
     animation-name: height;
@@ -53,7 +51,7 @@ a{
     animation-delay: 4s;
     animation-iteration-count: 1;
     animation-fill-mode:both;
-}
+} */
 @keyframes prerol{
     0%{
         top: 0;
@@ -110,6 +108,7 @@ a{
     font-size: 19px;
     margin: 10px;
     transition: 0.5s ease-in-out;
+    cursor: cell;
 }
 html, body{
     margin: 0;
@@ -335,18 +334,20 @@ body::-webkit-scrollbar-thumb{
     width: 70px;
     height: 3px;
     background-color: #f1eee9;
+    transition: all 0.2s ease-in-out;
 }
 .services__box img {
     width: 45px;
     height: auto;
     stroke: rgb(253, 253, 253);
     stroke-width: 20px;
-    filter: grayscale(100%);
     padding-bottom: 30px;
+    transition: all 0.2s ease-in-out;
 }
 .services__box h3{
     font-size: 22px;
     line-height: 30px;
+    transition: all 0.2s ease-in-out;
 }
 .services__box p{
     max-width: 285px;
@@ -862,6 +863,12 @@ li::marker{
     align-items: center;
     justify-content: space-evenly;
 }
+.partner__img img{
+    transition: all 0.5s ease-in-out;
+}
+.partner__img img:hover{
+    scale: 1.1;
+}
 .footer{
     background: #111111;
     
@@ -877,6 +884,10 @@ li::marker{
 }
 .footer__span{
     color: #959595;
+    transition: all 0.5s ease-in-out;
+}
+.footer__span:hover{
+    color: #8a673d;
 }
 .left,
 .right{
