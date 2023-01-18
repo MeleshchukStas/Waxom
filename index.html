@@ -7,10 +7,24 @@
     <title>Waxom</title>
     <link rel="stylesheet" href="slaider.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="shortcut icon" href="img/logos.png" >
 </head>
 <body>
-<div class="prerol">
+    <div class="prerol">
+        <svg viewbox="0,0 1800,800">
+            <path id="gor1"
+                fill="tranparent"
+                stroke="orange"
+                stroke-width="3px"
+                 d="M 565.236 425.086 C 565.236 2.273 1267.424 0.398 1269.299 419.461 M 1269.301 419.468 C 1269.869 891.449 558.251 902.568 565.236 425.086"/>
+            <path id="gor2"
+                fill="tranparent"
+                stroke="orange"
+                stroke-width="3px"
+                d="M 661 680 L 908.5 110.338 L 1158.678 682.967 L 890.766 685.733 L 922.164 621.855 L 1072 621 L 910 234 L 733.78 681.402 L 661 680 M 733.78 681.408 L 683 632 L 761.528 608.668 L 714 561 L 788 541 L 741 499 L 809 487 L 768 436 L 834 424 L 793 380 L 855 369 L 815 328 L 876 316 L 836 281 L 895 268 L 858 231 L 960 231 L 926 269 L 981 279 L 945 314 L 1001 324 L 965 363 L 1025 379 L 988 417 L 1045 426 L 1008.888 468.17 L 1068 478 L 1031.033 519.886 L 1092 534 L 1052.834 572.712 L 1115 587 L 1072 621 L 1130 621 L 1105 683 L 1071.664 620.743 L 1037 683 L 1002 623 L 963 684 L 922.222 621.966"/>  
+        </svg> 
 <div class="button-right">
     <a href="#header">Top</a>
     <a href="#footer">Down</a>
@@ -24,16 +38,35 @@
 					<input type="radio" name="slider" id="switch3">
 					<input type="radio" name="slider" id="switch4">
 					<input type="radio" name="slider" id="switch5">
-					<section class="container" style="position: absolute; right: 0%; left: 0%; text-align: center;">
-						<div class="header__top" >
-							<div class="logo_meni">
-                                <div class="logotip">
-                                    <img src="img/logos.png" alt="" class="logo__img">
-                                    <h4 class="logotext">Waxom</h4>
-                                </div>
+					
+
+                    <section class="container">
+						<div class="slaider_block">
+                            <div class="header__top" >
+
                                 <div class="meni">
                                     <input type="checkbox" id="checkbox_toggle">
                                     <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                                    <ul class="meni__list2">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#services">About Us</a></li>
+                                        <li><a href="#portfolio">Portfolio</a></li>
+                                        <li><a href="#features">Features</a></li>
+                                        <li><a href="#blog">Blog</a></li>
+                                        <li><a href="#pricing">Pricing</a></li>
+                                        <li><a href="#shortcodex">Shortcodex</a></li>
+                                        <li><a href="#footer">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="logo_meni">
+                                    <div class="logotip">
+                                        <img src="img/logos.png" alt="" class="logo__img">
+                                        <h4 class="logotext">Waxom</h4>
+                                    </div>
+                                    
+                                </div>
+                                <div class="meni">
                                     <ul class="meni__list">
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#services">About Us</a></li>
@@ -45,21 +78,24 @@
                                         <li><a href="#footer">Contact</a></li>
                                     </ul>
                                 </div>
+
+                                <div class="search">
+                                    <img class="cart" src="img/icon-cart.png" alt="">
+                                    <img class="lupa" src="img/icon-search.png" alt="">
+                                </div>
                             </div>
-                            <div class="search">
-                                <img class="cart" src="img/icon-cart.png" alt="">
-                                <img class="lupa" src="img/icon-search.png" alt="">
+                            <div class="header__midle">
+                                <h2>Unique and Modern Design</h2>
+                                <h1>Portfolio PSD Template</h1>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
+                                <div class="header__midle__bottom">
+                                    <a href="#services">GET STARTED</a>
+                                </div>
                             </div>
-						</div>
-						<div class="header__midle">
-							<h2>Unique and Modern Design</h2>
-							<h1>Portfolio PSD Template</h1>
-							<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-							<div class="header__midle__bottom">
-								<a href="#services">GET STARTED</a>
-							</div>
-						</div>
+                        </div>
 					</section>
+
+
 				<div id="slides">
 					<div id="overflow">
 						<div class="image">
