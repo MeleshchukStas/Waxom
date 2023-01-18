@@ -150,10 +150,6 @@ body::-webkit-scrollbar-thumb{
 .container__content{
     padding: 4% 0;
 }
-
-
-
-
 .header__top{
     display: flex;
     flex-direction: row;
@@ -194,13 +190,13 @@ body::-webkit-scrollbar-thumb{
 .meni__list2{
     display: none;
 }
-.meni__list li a{
+.meni__list li a, .meni__list2 li a{
     margin: 0 15px;
     color: var(--color);
     font-size: 14px;
     transition: 0.2s ease-in-out;
 }
-.meni__list li a:hover{
+.meni__list li a:hover, .meni__list2 li a:hover{
     color: #c7b299;
     cursor: url(./img/cursor2.png)2 2, default;
 }
@@ -909,6 +905,7 @@ li::marker{
     align-items: center;
 }
 .footer__span{
+    display: inline;
     color: #959595;
     transition: all 0.5s ease-in-out;
 }
