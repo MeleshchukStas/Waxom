@@ -627,7 +627,7 @@ video{
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(./img/video_bg.jpg);       
+    background: url(./img/video_bg.jpg)no-repeat center center / cover;       
 }
 .video_text{
     display: inline;
@@ -871,11 +871,10 @@ li::marker{
     color: var(--color);
     background-color: #a48d72;
 }
-
-
 .partner{
     background: url(./img/partners_bg.jpg)no-repeat;
-    background-position: 50% 50%;
+    background-position: 100% 30%;
+    background-size: 100% 136%;
     padding: 50px 0;
 }
 .partner__img{
