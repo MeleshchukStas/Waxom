@@ -689,7 +689,7 @@ video{
 }
 .mobile__devices img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .devices__text h2{
     font-size: 30px;
@@ -777,6 +777,10 @@ li::marker{
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
     margin: 11px;
+}
+.posts img{
+    width: 100%;
+    height: 100%;
 }
 .posts__txt{
     margin-left: 20px;
