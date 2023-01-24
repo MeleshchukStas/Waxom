@@ -11,8 +11,9 @@
 html, body{
 	width: 100%;
 	height: 100vh;
-    
+    	scroll-behavior: smooth;
 }
+
 span{
     display: block;
 }
