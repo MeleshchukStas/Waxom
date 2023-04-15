@@ -1,387 +1,159 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waxom</title>
-    <link rel="stylesheet" href="slaider.css">
+    <meta name="description" content="Чашки ">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="shortcut icon" href="img/logos.png" >
+    <link rel="shortcut icon" href="img/cofee_mini.png">
+    <title>Твоя чашка</title>
 </head>
+
 <body>
-    <div class="prerol">
-        <svg viewbox="0,0 1800,800">
-            <path id="gor1"
-                fill="none"
-                stroke="orange"
-                stroke-width="3px"
-                 d="M 565.236 425.086 C 565.236 2.273 1267.424 0.398 1269.299 419.461 M 1269.301 419.468 C 1269.869 891.449 558.251 902.568 565.236 425.086"/>
-            <path id="gor2"
-                fill="none"
-                stroke="orange"
-                stroke-width="3px"
-                d="M 661 680 L 908.5 110.338 L 1158.678 682.967 L 890.766 685.733 L 922.164 621.855 L 1072 621 L 910 234 L 733.78 681.402 L 661 680 M 733.78 681.408 L 683 632 L 761.528 608.668 L 714 561 L 788 541 L 741 499 L 809 487 L 768 436 L 834 424 L 793 380 L 855 369 L 815 328 L 876 316 L 836 281 L 895 268 L 858 231 L 960 231 L 926 269 L 981 279 L 945 314 L 1001 324 L 965 363 L 1025 379 L 988 417 L 1045 426 L 1008.888 468.17 L 1068 478 L 1031.033 519.886 L 1092 534 L 1052.834 572.712 L 1115 587 L 1072 621 L 1130 621 L 1105 683 L 1071.664 620.743 L 1037 683 L 1002 623 L 963 684 L 922.222 621.966"/>  
-        </svg> 
-<div class="button-right">
-    <a href="#header">Top</a>
-    <a href="#footer">Down</a>
-</div>
-<header class="header" id="header">
-    <div class="all">
-		<input checked type="radio" name="respond" id="desktop">
-			<div id="slider">
-					<input checked type="radio" name="slider" id="switch1">
-					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
-					<input type="radio" name="slider" id="switch4">
-					<input type="radio" name="slider" id="switch5">
-                    <section class="container">
-						<div class="slaider_block">
-                            <div class="header__top" >
+    <header class="header" style="position: fixed; z-index: 9999999;">
+        <div class="logo">
+            <img src="img/cofee_logo.png" alt="">
+        </div>
 
-                                <div class="meni">
-                                    <input type="checkbox" id="checkbox_toggle">
-                                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
-                                    <ul class="meni__list2">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#services">About Us</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
-                                        <li><a href="#features">Features</a></li>
-                                        <li><a href="#blog">Blog</a></li>
-                                        <li><a href="#pricing">Pricing</a></li>
-                                        <li><a href="#shortcodex">Shortcodex</a></li>
-                                        <li><a href="#footer">Contact</a></li>
-                                    </ul>
-                                </div>
-                                <div class="logo_meni">
-                                    <div class="logotip">
-                                        <img src="img/logos.png" alt="" class="logo__img">
-                                        <h4 class="logotext">Waxom</h4>
-                                    </div>
-                                </div>
-                                <div class="meni">
-                                    <ul class="meni__list">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#services">About Us</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
-                                        <li><a href="#features">Features</a></li>
-                                        <li><a href="#blog">Blog</a></li>
-                                        <li><a href="#pricing">Pricing</a></li>
-                                        <li><a href="#shortcodex">Shortcodex</a></li>
-                                        <li><a href="#footer">Contact</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="search">
-                                    <img class="cart" src="img/icon-cart.png" alt="">
-                                    <img class="lupa" src="img/icon-search.png" alt="">
-                                </div>
-                            </div>
-                            <div class="header__midle">
-                                <h2>Unique and Modern Design</h2>
-                                <h1>Portfolio PSD Template</h1>
-                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.</p>
-                                <div class="header__midle__bottom">
-                                    <a href="#services">GET STARTED</a>
-                                </div>
-                            </div>
+        <div class="right_box">
+            <div class="wallet">
+                <a href="#open_Modal2" class="wallet_box"></a>
+                <div id="open_Modal2" class="modal_Dialog2">
+                    
+                    <div class="list2" id="qwer">
+                        <a href="#close" title="qwer" class="close">X</a>
+                        <div id="carzina" class="delite">
                         </div>
-					</section>
+                        <div id="bmodalw" class="bmodal_container"></div>
+                    </div>
+                </div>
+                <div id="counter"></div>
+            </div>
+            <div class="persona">
+                <a href="#openModal" class="registration" >
+                    <img id="output1" src="img/human.png" name="images" alt="" style=" width: 100%; height: 100%; ">
+                </a>
+                <div id="openModal" class="modalDialog">
+                    <div class="list">
+                        <a href="#close" title="qwer" class="close">X</a>
+                        <form name="ver">
+                            <input class="text1 sty" name="emailV" type="text" placeholder="Ваш e-mail"
+                                required="required" maxlength="50" size="40">
+                            <p class="inp_text" name="vEmail">Ваш e-mail:</p>
+
+                            <input class="text1 sty" name="passV" type="text" placeholder="Ваш пароль" required
+                                maxlength="50">
+                            <p class="inp_text" name="vPass">Ваш пароль:</p>
+
+                            <input id="avtor" class="box_button2" type="button1" value="Авторизация">
+                        </form>
+
+                        <form name="reg">
+                            <input class="text2 sty" name="firstName" type="text" placeholder="Ваше имя" required
+                                maxlength="50">
+                            <p class="inp_text" name="pFname">Ваше имя:</p>
 
 
-				<div id="slides">
-					<div id="overflow">
-						<div class="image">
-							<div class="slider_img"><img src="img/photo.jpg" alt="slaider"></div>
-							<div class="slider_img"><img src="img/photo.jpg" alt="slaider"></div>
-							<div class="slider_img"><img src="img/photo.jpg" alt="slaider"></div>
-							<div class="slider_img"><img src="img/photo.jpg" alt="slaider"></div>
-							<div class="slider_img"><img src="img/photo.jpg" alt="slaider"></div>
-						</div>
-					</div>
-				</div>
-				<div id="controls">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-				<div id="active">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-            </div>
-	</div>
-</header>
-<section class="container__content" id="services">
-    <div class="services">
-        <div class="services__box">
-            <img src="img/icon1.png" alt="">
-            <h3>Web & App Design</h3>
-            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-        </div>
-        <div class="services__box">
-            <img src="img/icon2.png" alt="">
-            <h3>Development</h3>
-            <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-        </div>
-        <div class="services__box">
-            <img src="img/icon3.png" alt="">
-            <h3>Customization</h3>
-            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-        </div>
-        <div class="services__box">
-            <img src="img/icon4.png" alt="">
-            <h3>Marketing</h3>
-            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-        </div>
-    </div>
-</section>
-<section class="text__boxes">
-    <div class="container">
-        <div class="boxes">
-            <div class="boxes__txt">
-                <h2><span>Waxom</span> Multipurpose WordPress Theme</h2>
-                <p>Don't Forget to Rate the Template. Thanks so much!</p>
-            </div>
-            <div class="button">
-                <a href="#">PURCHASE NOW</a>   
-            </div>
-        </div>
-    </div>
-</section>
-<section class="container__content"  id="portfolio">
-    <div class="latest__project">
-        <div class="latest__project__text">
-            <h2>Our Latest Projects.</h2>
-            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam<br> processus dynamicus, qui sequitur mutationem consuetudium.</p>
-        </div>
-        <div class="latest__project__menu">
-            <div class="project__menu__meni">
-                <ul>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Mobile App</a></li>
-                    <li><a href="#">Illustration</a></li>
-                    <li><a href="#">Photography</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="latest__project__img__box">
-            <div class="project__img__box">
-                <img src="img/project_img-1.jpg" alt="">
-                <div class="project_link_img">
-                    <img src="img/lupa.png" alt="">
-                    <img src="img/link.png" alt="">
-                </div>
-                <div class="project__txt">
-                    <h3>Claritas Etiam Processus</h3>
-                    <p>Photography, Nature</p>
-                </div>
-            </div>
-            <div class="project__img__box">
-                <img src="img/project_img-2.jpg" alt="">
-                <div class="project_link_img">
-                    <img src="img/lupa.png" alt="">
-                    <img src="img/link.png" alt="">
-                </div>
-                <div class="project__txt">
-                    <h3>Quam Nutamus Farum</h3>
-                    <p>Graphic Design, Mock-Up</p>  
-                </div>
-            </div>
-            <div class="project__img__box">
-                <img src="img/project_img-3.jpg" alt="">
-                <div class="project_link_img">
-                    <img src="img/lupa.png" alt="">
-                    <img src="img/link.png" alt="">
-                </div>
-                <div class="project__txt">
-                    <h3>Usus Legentis Videntur</h3>
-                    <p>Photography, Holiday</p>
-                </div>
-            </div>
-            <div class="project__img__box">
-                <img src="img/project_img-4.jpg" alt="">
-                <div class="project_link_img">
-                    <img src="img/lupa.png" alt="">
-                    <img src="img/link.png" alt="">
-                </div>
-                <div class="project__txt">
-                    <h3>Claritas Etiam Processus</h3>
-                    <p>Photography, Nature</p>
-                </div>
-            </div>
-            <div class="project__img__box">
-                <img src="img/project_img-5.jpg" alt="">
-                <div class="project_link_img">
-                    <img src="img/lupa.png" alt="">
-                    <img src="img/link.png" alt="">
-                </div>
-                <div class="project__txt">
-                    <h3>Quam Nutamus Farum</h3>
-                    <p>Graphic Design, Mock-Up</p>  
-                </div>
-            </div>
-            <div class="project__img__box">
-                <img src="img/project_img-6.jpg" alt="">
-                <div class="project_link_img">
-                    <img src="img/lupa.png" alt="">
-                    <img src="img/link.png" alt="">
-                </div>
-                <div class="project__txt">
-                    <h3>Usus Legentis Videntur</h3>
-                    <p>Photography, Holiday</p>
+                            <input class="text2 sty" name="emailY" type="email" placeholder="Ваш e-mail" required
+                                maxlength="50">
+                            <p class="inp_text" name="pEmail">Ваш e-mail:</p>
+
+
+                            <input class="text2 sty" name="passY" type="pass" placeholder="Ваш пароль" required
+                                maxlength="50">
+                            <p class="inp_text" name="pPass">Ваш пароль:</p>
+
+                            <div class="input__wrapper">
+                                <input class="addPhoto" type="file" name="images" id="fr">
+                                <label for="fr" class="input__file-button">
+                                    <span class="input__file-icon-wrapper"><img class="input__file-icon"
+                                            src="img/add.png" alt="Выбрать файл" width="25"></span>
+                                    <span class="input__file-button-text">Добавить фото</span>
+                                </label>
+                            </div>
+
+                            <input id="regis" class="box_button2" type="button" value="Регестрация">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="latest__project_button">
-            <a href="">LOAD MORE</a>
-        </div>
-    </div>
-</section>
-    <div class="video_prerol" id="features">
-        <input id="video" type="checkbox">
-        <label class="prerol_video" for="video">
-            <span class="video_text">
-                <span class="video_txt">Waxom Video Presentation</span>
-                <span class="video_punkt">investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</span>
-                <time class="video_time">03:26</time>
-            </span>
-        </label>
-            <video width="400" height="300"  muted autoplay>
-                <source src="video.mp4">
-            </video>
-    </div>
-<section class="container__content" style="padding-bottom: 0px; position: relative; top: 4px; z-index: 2;">
-<div class="mobile__devices"> 
-        <div class="devices__img">
-            <img src="img/mobile.png" alt="mobile">
-        </div>
-        <div class="devices__text">
-            <h2>Excellent for Mobile Devices.</h2>
-            <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-            <ul class="devices__list">
-                <li>Nam liber tempor cum soluta nobis eleifend option;</li>
-                <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-                <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-                <li>Investigationes demonstraverunt lectores</li>
-            </ul>
-        </div>
-   </div>
-</section>
-<div class="text__boxes" id="blog">
-    <div class="container">
-        <div class="counter">
-            <div class="counter__box">
-                <img src="img/icon9.png" alt="">
-                <p class="num">3587</p>
-                <p class="counter_box_txt">Satisfied Clients</p>
-            </div>
-            <div class="counter__box">
-                <img src="img/icon8.png" alt="">
-                <p class="num">207</p>
-                <p class="counter_box_txt">Cups of coffee</p>
-            </div>
-            <div class="counter__box">
-                <img src="img/icon7.png" alt="">
-                <p class="num">2500</p>
-                <p class="counter_box_txt">Blog posts</p>
-            </div>
-            <div class="counter__box">
-                <img src="img/icon6.png" alt="">
-                <p class="num">873</p>
-                <p class="counter_box_txt">Likes</p>
-            </div>
-            <div class="counter__box">
-                <img src="img/icon5.png" alt="">
-                <p class="num">900</p>
-                <p class="counter_box_txt">We launched</p>
-            </div>
-        </div>
-    </div>
-</div>
-<section class="container__content" id="pricing">
-    <div class="post">
-        <div class="posts__text">
-            <h2>Recent Posts.</h2>
-            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynam-<br>icus, qui sequitur mutationem consuetudium.</p>
-        </div>
-        <div class="post__box">
-            <div class="posts">
-                <img src="img/recent_post_01.jpg" alt="">
-                <div class="data">
-                    <div class="time">30</div>
-                    <div class="time">Sep</div>
+    </header>
+    <main>
+        <div class="container" style="padding: 100px 0px;">
+            <div id="cupsAdds" class="boxs">
+                <div style="width: 100%;" class="tableUser">
                 </div>
-                <div class="posts__txt">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <a href="#">Read More</a>
-                </div>       
-            </div>
-            <div class="posts">
-                <img src="img/recent_post_02.jpg" alt="">
-                <div class="data">
-                    <div class="time">30</div>
-                    <div class="time">Sep</div>
+                <div class="box" id="hover1">
+                    <img id="pic1" src="img/chahka1.jpg" alt="">
+                    <div class="description">
+                        <h3 class="name">Чашка</h3>
+                        <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, labore.</p>
+                        <span class="price">150 &#8372</span>
+                        <a class="box_button" href="#">Купить</a>
+                    </div>
                 </div>
-                <div class="posts__txt">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <a href="#">Read More</a>
-                </div>  
-            </div>
-            <div class="posts">
-                <img src="img/recent_post_03.jpg" alt="">
-                <div class="data">
-                    <div class="time">30</div>
-                    <div class="time">Sep</div>
+                <div class="box" id="hover2">
+                    <img id="pic2" src="img/chahka2.jpg" alt="cup">
+                    <div class="description">
+                        <h3 class="name">Чашка</h3>
+                        <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, labore.</p>
+                        <span class="price">250 &#8372</span>
+                        <a class="box_button" href="#">Купить</a>
+                    </div>
                 </div>
-                <div class="posts__txt">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <a href="#">Read More</a>
-                </div>  
+                <div class="box" id="hover3">
+                    <img id="pic3" src="img/chahka3.jpg" alt="cup">
+                    <div class="description">
+                        <h3 class="name">Чашка</h3>
+                        <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, labore.</p>
+                        <span class="price">350 &#8372</span>
+                        <a class="box_button" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="box" id="hover4">
+                    <img id="pic4" src="img/chahka4.jpg" alt="cup">
+                    <div class="description">
+                        <h3 class="name">Чашка</h3>
+                        <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, labore.</p>
+                        <span class="price">450 &#8372</span>
+                        <a class="box_button" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="box" id="hover5">
+                    <img id="pic5" src="img/chahka5.jpg" alt="cup">
+                    <div class="description">
+                        <h3 class="name">Чашка</h3>
+                        <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, labore.</p>
+                        <span class="price">550 &#8372</span>
+                        <a class="box_button" href="#">Купить</a>
+                    </div>
+                </div>
+                <div id="asdfrqw">
+                    <button class='box_add' onclick='openWindow()'>
+                    </button>
+                </div>
             </div>
+
         </div>
-    </div>
-</section>
-<div class="partner" id="shortcodex">
-    <div class="container__content">
-        <div class="partner__img">
-            <img src="img/partners_barbers.png" alt="">
-            <img src="img/partners_delicious.png" alt="">
-            <img src="img/partners_desingers.png" alt="">
-            <img src="img/partners_royal.png" alt="">
+    </main>
+    <footer class="footer">
+        <div class="r">
+            <p>© 2023 Твоя чашка. Всі права захищені.</p>
         </div>
-    </div>
-</div>
-<footer class="footer" id="footer">
-    <div class="container">
-        <div class="footer__content">
-            <div class="left">
-                <p>Copyright © 2015 <span class="footer__span">Waxom</span></p>
-                <a href="#">Privacy Policy</a>
-                <a href="#">FAQ </a>
-                <a href="#" style="border: none;">Support</a>
-            </div>
-            <div class="right">
-                <p>Designed by <a class="footer__span" href="">Stas M</a></p>
-                <p style="border: none;">Only on <span class="footer__span">Envato Market</span></p>
-            </div>
-        </div>
-    </div>
-</footer>
-</div>
+        <ul class="socseti">
+            <li class="setu"><a href=" "><img src="img/free-icon-instagram-3955024.png" alt=""></a></li>
+            <li class="setu"><a href=" "><img src="img/free-icon-telegram-3670070.png" alt=""></a></li>
+            <li class="setu"><a href=" "><img src="img/free-icon-facebook-4494475.png" alt=""></a></li>
+        </ul>
+    </footer>
+    <script src="style.js"></script>
+    <script>
+
+    </script>
 </body>
+<div></div>
+
 </html>
-
-
